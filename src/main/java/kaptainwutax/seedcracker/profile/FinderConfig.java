@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class FinderConfig {
 
-    protected FinderProfile finderProfile = new VanillaProfile();
+    protected FinderProfile finderProfile = new CustomProfile();
     protected Map<Finder.Type, ConcurrentLinkedQueue<Finder>> activeFinders = new ConcurrentHashMap<>();
 
     public FinderConfig() {
